@@ -1,0 +1,125 @@
+\documentclass[10pt,a4paper,sans]{moderncv}         % font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{orange}                              % 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\nopagenumbers{}                                    % automatic page numbering
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                  % width of the column with the dates
+
+% personal data
+\name{Yann}{Lambert}
+\title{Ingénieur Système GNU/Linux}
+\address{<myAddress>}{myPostalCodeAndCity}
+\phone[mobile]{myPhone}                      % "mobile" (default), "fixed" or "fax"
+\email{yann@lambert.tf}
+%\homepage{www.lambert.tf}
+\social[linkedin]{yann-lambert-962a6813b}
+%\social[github]{wasapi}
+\extrainfo{35 ans}
+%\photo[64pt][0.4pt]{yann.png}
+
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+
+% content
+\begin{document}
+
+\makecvtitle
+
+\section{Compétences}
+\cvdoubleitem{GNU/Linux}{Gentoo, Debian, RedHat}{Switch}{Extreme}
+\cvdoubleitem{Firewall}{NetScreen, Palo Alto, Fortinet}{BDD}{Mysql, PostgreSQL, Redis, Mongo}
+\cvdoubleitem{Supervision}{Shinken, Nagios, Graphite, Grafana, Collectd}{Infrastructure}{GIT, Nginx, Apache, Bind, Postfix, DHCP, OpenLDAP, NTP, NFS, ELK}
+\cvdoubleitem{Déploiement}{Puppet, FAI-project, Salt, Ansible}{Containers}{Docker}
+
+\section{Certifications}
+\cvitem{Microsoft}{Installing, Configuring, and Administering Microsoft Windows XP Professional\newline{}Managing and Maintaining a Windows Server 2003 Environment}
+\cvitem{Varnish}{Varnish administration}
+
+\section{Expériences}
+\cventry{Depuis 2014}{Ingénieur Système GNU/Linux}{Numericable-SFR}{Saint-Denis}{}{Au sein de l'Ingénierie Système Grand Public, j'ai eu à mettre en place ou faire évoluer différentes plateformes, en collaboration avec les demandeurs.
+\begin{itemize}
+\item Mise en place d'une plateforme de cache d'images régionalisée pour la VOD (Nginx, Quagga, OSPF, Anycast)
+\item Mise en place d'un outil de gestion des datacenters (openDCIM)
+\item Installation d'hyperviseurs de virtualisation (kvm, libvirt, openvswitch, iscsi)
+\item Refonte de l'architechture de la plateforme de supervision (Shinken)
+\item Administration des firewalls (NetScreen, Palo Alto, Fortinet)
+\item Administration des plateformes de service (DHCP, DNS, NTP, GIT)
+\item Gestion de la configuration des plateformes (Puppet, Salt, Ansible)
+\item Collecte de métriques et création de dashboards (Collectd, Graphite, Grafana)
+\item Suivi de la mise en place d'une solution de stockage d'objets, et administration (Ceph)
+\item Astreinte 24/7 Niveau 2
+\end{itemize}}
+
+\cventry{2011--2013}{Ingénieur Système GNU/Linux}{TéléDiffusion de France}{Les Lilas}{}{Dans le cadre de la fiabilisation de l'application métier utilisée sur l'ensemble des contrôleurs de diffusion, j'ai mis en place un ensemble de scripts (Bash, awk) et formé les membres de l'équipe.
+\begin{itemize}
+\item Détection des problèmes
+\item Assurer une continuité de service
+\item Mise en place de statistiques de disponibilité des divers services
+\item Mise en place d'actions automatisées à partir de l'hyperviseur de supervision (Smarts, Nagios)
+\item Création d'un DVD permettant l'installation complète d'un hyperviseur de virtualisation contenant un serveur virtuel configuré pour contrôler la diffusion (RedHat, Kickstart, Bash)
+\item Transfert de compétences
+\item Rédaction de la documentation sur les plateformes techniques
+\end{itemize}}
+
+\cventry{2009--2011}{Administrateur Système GNU/Linux}{Institut de Radioprotection et de Sûreté Nucléaire}{Fontenay-aux-Roses}{}{Au sein de l'équipe UNIX de l'IRSN, j'ai dû assurer le bon fonctionnement, la gestion des projets, la mise en production des équipements.
+\begin{itemize}
+\item Administration et installation des clusters de calculs (RedHat, Tru64, Solaris, HP-UX)
+\item Supervision des serveurs et équipements réseau (Nagios, Centreon)
+\item Gestion des sauvegardes et des robots associés (Netbackup)
+\item Installation de logiciels et applications métier (codes de calculs, gestionnaire de batch)
+\item Gestion des passerelles IronPort (Proxy HTTP et SMTP)
+\item Mise en place d'une solution d'installation automatisée de serveurs (Cobbler, Kickstart)
+\item Astreinte 24/7 pour les serveurs et clusters de calculs du Centre Technique de Crise
+\item Rédaction de procédures de modes opératoires
+\item Assistance technique aux utilisateurs
+\end{itemize}}
+
+\cventry{2008}{Administrateur Système Windows}{STAGO}{Gennevilliers}{}{
+\begin{itemize}
+\item Administration des serveurs Windows (AD, DNS, DHCP, WSUS)
+\item Gestion des sauvegardes (ArcServe)
+\item Migration de messagerie Lotus Notes de la V5 vers la V8
+\item Gestion de l'équipe réalisant l'opération de migration de la messagerie
+\item Reporting de l'avancement de la migration de la messagerie
+\item Aide aux utilisateurs
+\end{itemize}}
+
+\cventry{2007}{Administrateur Système GNU/Linux}{Euro-Web (Hébergeur)}{Paris}{}{
+\begin{itemize}
+\item Installation et configuration de serveurs (Gentoo, Debian, Windows)
+\item Installation et configuration de logiciels (Apache, Bind, Qmail, ProFTPD, MySQL)
+\item Étude et réalisation de projets suivant des besoins spécifiques (Streaming, Jeux)
+\item Maintenance matérielle des serveurs
+\item Migration des serveurs vers un nouveau datacenter
+\item Support clients
+\end{itemize}}
+
+\cventry{2004--2006}{Administrateur Système Windows (Alternance)}{ArjoWiggins Security}{Crèvecoeur-en-Brie}{}{
+\begin{itemize}
+\item Gestion des serveurs Windows et de la sauvegarde des bases de données Oracle (HP-UX, AD, GPO)
+\item Configuration, maintenance et dépannage des serveurs de télésurveillance (BVMS)
+\item Gestion du parc informatique
+\item Gestion des incidents
+\end{itemize}}
+
+\section{Formation}
+\cventry{2003--2006}{Niveau BTS IRIS}{UTEC}{Emerainville}{}{}
+\cventry{1999--2003}{Bac Pro MSMA -- Mention Bien}{Lycée Clément Ader}{Tournan-en-Brie}{}{}
+
+\section{Loisirs}
+\cvitem{Association}{Trésorier de Chelles Gospel}
+\cvitem{Sport}{Escalade}
+\cvitem{Musique}{Trompette}
+\cvitem{Electronique}{Arduino, domotique}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}
+
+\end{document}
