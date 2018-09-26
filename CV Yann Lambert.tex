@@ -1,5 +1,4 @@
 \documentclass[10pt,a4paper,sans]{moderncv}         % font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
 % moderncv themes
 \moderncvstyle{classic}                             % 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
 \moderncvcolor{orange}                              % 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
@@ -11,6 +10,7 @@
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                  % width of the column with the dates
+
 
 % personal data
 \name{Yann}{Lambert}
@@ -42,7 +42,17 @@
 \cvitem{Varnish}{Varnish administration}
 
 \section{Expériences}
-\cventry{Depuis 2014}{Ingénieur Système GNU/Linux}{Numericable-SFR}{Saint-Denis}{}{Au sein de l'Ingénierie Système Grand Public, j'ai eu à mettre en place ou faire évoluer différentes plateformes, en collaboration avec les demandeurs.
+\cventry{Depuis 2018}{Ingénieur Système GNU/Linux}{Parrot}{Paris}{}{Au sein de la DSI, j'ai eu à mettre en place différentes plateformes pour les équipes R\&D, la migration de l'infrastructure du site ecommerce, mettre en place une infrastructure de déploiement/configuration pour les PC/Serveurs Linux.
+\begin{itemize}
+\item Migration de l'infrastructure du site ecommerce Drupal vers AWS (Cloudfront, EC2, S3, Auto Scaling Groups, Aurora, Redis, Solr, PHP, Nginx, Ansible)
+\item Centralisation de la configuration des serveurs (Ansible)
+\item Mise en place d'une solution de déploiement basée sur preseed (pxe, dhcp, tftp, syslinux, preseed)
+\item Mise en place de métrologie (Telegraf, Influxdb, Grafana, Observium)
+\item Installation d'outils, notamment d'intégration continue pour les équipes de R\&D (Jenkins, Gitlab, Gerrit, Docker swarm)
+\item Administration des Firewall (pfSense, Fortinet)
+\end{itemize}}
+
+\cventry{2014--2017}{Ingénieur Système GNU/Linux}{Numericable-SFR}{Saint-Denis}{}{Au sein de l'Ingénierie Système Grand Public, j'ai eu à mettre en place ou faire évoluer différentes plateformes, en collaboration avec les demandeurs.
 \begin{itemize}
 \item Mise en place d'une plateforme de cache d'images régionalisée pour la VOD (Nginx, Quagga, OSPF, Anycast)
 \item Mise en place d'un outil de gestion des datacenters (openDCIM)
@@ -85,8 +95,7 @@
 \item Administration des serveurs Windows (AD, DNS, DHCP, WSUS)
 \item Gestion des sauvegardes (ArcServe)
 \item Migration de messagerie Lotus Notes de la V5 vers la V8
-\item Gestion de l'équipe réalisant l'opération de migration de la messagerie
-\item Reporting de l'avancement de la migration de la messagerie
+\item Gestion de l'équipe réalisant la migration de la messagerie, reporting
 \item Aide aux utilisateurs
 \end{itemize}}
 
@@ -95,7 +104,7 @@
 \item Installation et configuration de serveurs (Gentoo, Debian, Windows)
 \item Installation et configuration de logiciels (Apache, Bind, Qmail, ProFTPD, MySQL)
 \item Étude et réalisation de projets suivant des besoins spécifiques (Streaming, Jeux)
-\item Maintenance matérielle des serveurs
+%\item Maintenance matérielle des serveurs
 \item Migration des serveurs vers un nouveau datacenter
 \item Support clients
 \end{itemize}}
@@ -104,8 +113,7 @@
 \begin{itemize}
 \item Gestion des serveurs Windows et de la sauvegarde des bases de données Oracle (HP-UX, AD, GPO)
 \item Configuration, maintenance et dépannage des serveurs de télésurveillance (BVMS)
-\item Gestion du parc informatique
-\item Gestion des incidents
+\item Gestion du parc informatique, gestion des incidents
 \end{itemize}}
 
 \section{Formation}
@@ -117,9 +125,5 @@
 \cvitem{Sport}{Escalade}
 \cvitem{Musique}{Trompette}
 \cvitem{Electronique}{Arduino, domotique}
-
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}
 
 \end{document}
