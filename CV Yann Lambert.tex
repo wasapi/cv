@@ -14,7 +14,7 @@
 
 % personal data
 \name{Yann}{Lambert}
-\title{Ingénieur Système GNU/Linux}
+\title{Ingénieur Systèmes \& Réseaux}
 \address{<myAddress>}{<myPostalCodeAndCity>}
 \phone[mobile]{<myPhone>}                      % "mobile" (default), "fixed" or "fax"
 \email{yann@lambert.tf}
@@ -32,10 +32,11 @@
 \makecvtitle
 
 \section{Compétences}
-\cvdoubleitem{GNU/Linux}{Gentoo, Debian, RedHat}{Switch}{Extreme}
-\cvdoubleitem{Firewall}{NetScreen, Palo Alto, Fortinet}{BDD}{Mysql, PostgreSQL, Redis, Mongo}
-\cvdoubleitem{Supervision}{Shinken, Nagios, Graphite, Grafana, Collectd}{Infrastructure}{GIT, Nginx, Apache, Bind, Postfix, DHCP, OpenLDAP, NTP, NFS, ELK}
-\cvdoubleitem{Déploiement}{Puppet, FAI-project, Salt, Ansible}{Containers}{Docker}
+\cvdoubleitem{GNU/Linux}{Debian, Gentoo, RedHat}{Containers}{Docker Swarm, LXD}
+\cvdoubleitem{Sécurité/Réseau}{NetScreen, Palo Alto, Fortinet, pfSense, Wallix, Extreme}{Déploiement}{Puppet, FAI-project, Salt, Ansible}
+\cvdoubleitem{Cloud}{AWS}{BDD}{Mysql, PostgreSQL, Redis, Mongo}
+\cvdoubleitem{Supervision}{Shinken, Graphite, Telegraf, Prometheus, Grafana, Collectd}{Infrastructure}{Ceph, Nginx, Apache, Bind, Postfix, DHCP, OpenLDAP, NTP, NFS, ELK}
+\cvdoubleitem{Outils}{Git, Gitlab, Gitlab-ci, Jenkins, Jira}{}{}
 
 \section{Certifications}
 \cvitem{Microsoft}{Installing, Configuring, and Administering Microsoft Windows XP Professional\newline{}Managing and Maintaining a Windows Server 2003 Environment}
@@ -44,12 +45,15 @@
 \section{Expériences}
 \cventry{Depuis 2018}{Ingénieur Système GNU/Linux}{Parrot}{Paris}{}{Au sein de la DSI, j'ai eu à mettre en place différentes plateformes pour les équipes R\&D, la migration de l'infrastructure du site ecommerce, mettre en place une infrastructure de déploiement/configuration pour les PC/Serveurs Linux.
 \begin{itemize}
-\item Migration de l'infrastructure du site ecommerce Drupal vers AWS (Cloudfront, EC2, S3, Auto Scaling Groups, Aurora, Redis, Solr, PHP, Nginx, Ansible)
-\item Centralisation de la configuration des serveurs (Ansible)
+\item Définition de l'architechture et migration de l'infrastructure du site e-commerce sur AWS (Cloudfront, EC2, S3, Auto Scaling Groups, Aurora, Redis, Solr, Drupal, PHP, Nginx, Ansible, Jenkins)
+\item Définition de l'architechture pour la mise en place du site groupe avec génération de pages statiques (serverless) sur AWS (S3, Drupal, Gatsby)
+\item Centralisation de la configuration des serveurs (Ansible, Apt-Cacher NG)
 \item Mise en place d'une solution de déploiement basée sur preseed (pxe, dhcp, tftp, syslinux, preseed)
 \item Mise en place de métrologie (Telegraf, Influxdb, Grafana, Observium)
-\item Installation d'outils, notamment d'intégration continue pour les équipes de R\&D (Jenkins, Gitlab, Gerrit, Docker swarm)
+\item Mise en place d'outils, notamment d'intégration continue pour les équipes de R\&D (Jenkins, Gitlab, Gerrit, Jira, Confluence, Docker swarm, Docker registry, Testrail, Coverity, Artifactory)
 \item Administration des Firewall (pfSense, Fortinet)
+\item Administration des Switchs (HP ProCurve)
+\item Support aux ingénieurs sur l'utilisation de l'environnement GNU/Linux
 \end{itemize}}
 
 \cventry{2014--2017}{Ingénieur Système GNU/Linux}{Numericable-SFR}{Saint-Denis}{}{Au sein de l'Ingénierie Système Grand Public, j'ai eu à mettre en place ou faire évoluer différentes plateformes, en collaboration avec les demandeurs.
