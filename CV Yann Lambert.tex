@@ -1,4 +1,11 @@
 \documentclass[10pt,a4paper,sans]{moderncv}         % font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{datenumber,fp}
+\newcounter{birthday}
+\setmydatenumber{birthday}{1983}{02}{18}
+\newcounter{today}
+\setmydatenumber{today}{\the\year}{\the\month}{\the\day}
+\FPsub\result{\thetoday}{\thebirthday}
+\FPdiv\myage{\result}{365.2425}
 % moderncv themes
 \moderncvstyle{classic}                             % 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
 \moderncvcolor{orange}                              % 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
@@ -21,7 +28,7 @@
 %\homepage{www.lambert.tf}
 \social[linkedin]{yann-lambert-962a6813b}
 %\social[github]{wasapi}
-\extrainfo{35 ans}
+\extrainfo{\FPtrunc\myage{\myage}{0}\myage\ ans}
 %\photo[64pt][0.4pt]{yann.png}
 
 \makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
