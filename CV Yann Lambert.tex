@@ -18,12 +18,27 @@
 \usepackage[scale=0.75]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                  % width of the column with the dates
 
+% to read file
+\usepackage{readarray}
+\usepackage{filecontents}
+
+% set private values
+\newcommand\private[1]{\csname DATA#1\endcsname}
+\readdef{private.txt}{\data}
+\readarray\data\MyDat[-,3]
+\newcounter{datacount}
+\setcounter{datacount}{0}%
+\whiledo{\value{datacount} < \MyDatROWS}{%
+  \stepcounter{datacount}%
+  \expandafter\xdef\csname DATA\MyDat[\arabic{datacount},1]\endcsname{%
+    \MyDat[\arabic{datacount},3]}%
+}
 
 % personal data
 \name{Yann}{Lambert}
 \title{Ingénieur Systèmes \& Réseaux}
-\address{<myAddress>}{<myPostalCodeAndCity>}
-\phone[mobile]{<myPhone>}                      % "mobile" (default), "fixed" or "fax"
+\address{\private{address}}{\private{city}}
+\phone[mobile]{\private{phone}}% "mobile" (default), "fixed" or "fax"
 \email{yann@lambert.tf}
 %\homepage{www.lambert.tf}
 \social[linkedin]{yann-lambert-962a6813b}
